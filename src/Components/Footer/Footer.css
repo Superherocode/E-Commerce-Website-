@@ -1,0 +1,137 @@
+.footer-section {
+  background-color: #015F69; /* Màu nền của footer */
+  color: #fff; /* Màu chữ trắng */
+  padding: 40px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #004d4d;
+}
+
+.footer-logo img {
+  width: 220px;
+  margin-left: -25px;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.newsletter button {
+  background-color: #0D7D8A;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.newsletter button i {
+  margin-left: 5px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.footer-column {
+  width: 22%;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #FFFFFF; /* Màu chữ của tiêu đề */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  color: #E1E1E1;
+}
+
+.footer-column ul li a {
+  color: #E1E1E1;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+.social-icons a {
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #004d4d;
+  padding-top: 10px;
+  font-size: 14px;
+}
+.footer-bottom p {
+  margin-top: 20px;  
+  color: #E1E1E1;
+  font-size: 12.6px;
+ 
+}
+/* ảnh nền tiêu đề */
+.news-header {
+  background-image: url('https://www.ueh.edu.vn/images/nso-splash-landscape-1499x999.gif'); /* Đường dẫn đến hình ảnh */
+  background-size: 100% auto; /* Bao phủ toàn bộ khu vực */
+  background-position: center center; /* Căn giữa hình ảnh */
+  background-repeat: no-repeat; /* Không lặp lại */
+  width: 100vw; /* Chiều rộng toàn bộ màn hình */
+  margin-left: calc(-50vw + 50%); /* Đảm bảo căn giữa đúng phần viewport */
+  padding: 80px 0; /* Tùy chỉnh khoảng cách trên dưới */
+  color: white;
+  text-align: center;
+  margin-top: -80px;
+}
+
+.news-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #D67B42;
+}
+
+.news-header .breadcrumb {
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+.news-header .breadcrumb a {
+  color: white;
+  text-decoration: none;
+}
+
+.news-header .breadcrumb a:hover {
+  text-decoration: underline;
+}

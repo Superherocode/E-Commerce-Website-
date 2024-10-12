@@ -9,6 +9,8 @@ import ShopIntroduce from './Pages/ShopIntroduce';
 import LoginSignup from './Pages/LoginSignup';
 import Home from './Pages/Home';
 import background from './Components/Assets/Background.png'
+import Footer from './Components/Footer/Footer';
+import Contact from './Pages/Contact';
 
 
 
@@ -26,8 +28,10 @@ function App() {
         <Route path='/gioithieu' element={<ShopIntroduce banner={background} category="gioithieu"/>}/>
         <Route path='/khuyenmai' element={<ShopIntroduce banner={background} category="khuyenmai"/>}/>
         <Route path='/tintuc' element={<ShopIntroduce banner={background} category="tintuc"/>}/>
+        <Route path='/lienhe' element={<Contact/>}/>
         <Route path='/login' element={<LoginSignup/>}/>
       </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );

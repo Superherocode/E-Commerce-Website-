@@ -1,13 +1,22 @@
 .item {
-  width: 600px;
+  width: 350px;
+}
+
+.item img {
+  width: 270px; /* Điều chỉnh chiều rộng của hình ảnh */
+  height: auto; /* Giữ tỉ lệ của hình ảnh */
 }
 
 .item p {
+  width: 270px;
   margin: 6px 0px;
+  text-align: center;
 }
 
 .item-prices {
   display: flex;
+  justify-content: space-around;
+  width: 270px;
   gap: 20px;
 }
 
@@ -17,7 +26,7 @@
   font-weight: 600;
 }
 
-.item-prices-new{
+.item-prices-old{
   color: #8c8c8c;
   font-size: 18px;
   font-weight: 500;
