@@ -8,9 +8,10 @@ import Product from './Pages/Product';
 import ShopIntroduce from './Pages/ShopIntroduce';
 import LoginSignup from './Pages/LoginSignup';
 import Home from './Pages/Home';
-import background from './Components/Assets/Background.png'
 import Footer from './Components/Footer/Footer';
 import Contact from './Pages/Contact';
+import Cart from './Pages/Cart';
+import ShopInformation from './Pages/ShopInformation';
 
 
 
@@ -21,15 +22,16 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/sanpham' element={<ShopCategory banner={background} />}/>
+        <Route path='/sanpham' element={<ShopCategory category="men"/>}/>
         <Route path='/product' element={<Product/>}>
           <Route path=':productId' element={<Product/>}/>
         </Route>
-        <Route path='/gioithieu' element={<ShopIntroduce banner={background} category="gioithieu"/>}/>
-        <Route path='/khuyenmai' element={<ShopIntroduce banner={background} category="khuyenmai"/>}/>
-        <Route path='/tintuc' element={<ShopIntroduce banner={background} category="tintuc"/>}/>
+        <Route path='/gioithieu' element={<ShopInformation/>}/>
+        <Route path='/khuyenmai' element={<ShopIntroduce category="khuyenmai"/>}/>
+        <Route path='/tintuc' element={<ShopIntroduce category="tintuc"/>}/>
         <Route path='/lienhe' element={<Contact/>}/>
-        <Route path='/login' element={<LoginSignup/>}/>
+        <Route path='/taikhoan' element={<LoginSignup/>}/>
+        <Route path='/cart' element={<Cart/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

@@ -1,7 +1,8 @@
+/* Footer Section */
 .footer-section {
-  background-color: #015F69; /* Màu nền của footer */
+  background-color: #015f69; /* Màu nền của footer */
   color: #fff; /* Màu chữ trắng */
-  padding: 40px 0;
+  padding: 40px;
 }
 
 .footer-top {
@@ -11,37 +12,38 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #004d4d;
 }
-
+.footer-logo {
+  flex: 1;
+}
 .footer-logo img {
   width: 220px;
   margin-left: -25px;
 }
 
-.newsletter {
+.newsletter-foot {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex: 1;
+  width: 100%;
 }
 
-.newsletter input[type="email"] {
+.footer-top input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 250px;
+  width: 100%;
 }
 
-.newsletter button {
-  background-color: #0D7D8A;
+.footer-top button {
+  background-color: #0d7d8a;
   color: #fff;
   padding: 10px 15px;
   border: none;
   cursor: pointer;
+  width: 130px;
   border-radius: 4px;
   font-size: 16px;
-}
-
-.newsletter button i {
-  margin-left: 5px;
 }
 
 .footer-links {
@@ -51,14 +53,14 @@
 }
 
 .footer-column {
-  width: 22%;
+  width: 100%;
 }
 
 .footer-column h4 {
   font-size: 16px;
   margin-bottom: 30px;
   font-weight: bold;
-  color: #FFFFFF; /* Màu chữ của tiêu đề */
+  color: #ffffff; /* Màu chữ của tiêu đề */
 }
 
 .footer-column ul {
@@ -68,11 +70,11 @@
 
 .footer-column ul li {
   margin-bottom: 10px;
-  color: #E1E1E1;
+  color: #e1e1e1;
 }
 
 .footer-column ul li a {
-  color: #E1E1E1;
+  color: #e1e1e1;
   text-decoration: none;
 }
 
@@ -80,9 +82,12 @@
   text-decoration: underline;
 }
 
+.social-icons {
+  display: flex;
+}
 
-
-.social-icons a {
+.social-icons p {
+  width: 30px;
   margin-right: 10px;
   color: #fff;
   text-decoration: none;
@@ -97,41 +102,46 @@
   font-size: 14px;
 }
 .footer-bottom p {
-  margin-top: 20px;  
-  color: #E1E1E1;
+  margin-top: 20px;
+  color: #e1e1e1;
   font-size: 12.6px;
- 
-}
-/* ảnh nền tiêu đề */
-.news-header {
-  background-image: url('https://www.ueh.edu.vn/images/nso-splash-landscape-1499x999.gif'); /* Đường dẫn đến hình ảnh */
-  background-size: 100% auto; /* Bao phủ toàn bộ khu vực */
-  background-position: center center; /* Căn giữa hình ảnh */
-  background-repeat: no-repeat; /* Không lặp lại */
-  width: 100vw; /* Chiều rộng toàn bộ màn hình */
-  margin-left: calc(-50vw + 50%); /* Đảm bảo căn giữa đúng phần viewport */
-  padding: 80px 0; /* Tùy chỉnh khoảng cách trên dưới */
-  color: white;
-  text-align: center;
-  margin-top: -80px;
 }
 
-.news-header h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  color: #D67B42;
-}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contact-info a:nth-child(2) {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .user-login {
+    display: block;
+  }
+  .toggle-bar {
+    display: block;
+    cursor: pointer;
+  }
+  .content-wrapper {
+    flex-direction: column; /* Đặt sidebar lên trên content */
+  }
 
-.news-header .breadcrumb {
-  font-size: 14px;
-  color: #f0f0f0;
-}
+  .sidebar {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+  }
+  .footer-section .container .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-.news-header .breadcrumb a {
-  color: white;
-  text-decoration: none;
-}
-
-.news-header .breadcrumb a:hover {
-  text-decoration: underline;
+    flex-wrap: wrap;
+  }
+  .footer-column ul li {
+    width: 100%;
+  }
+  .footer-top {
+    gap: 10px;
+    align-items: start;
+    flex-direction: column;
+  }
 }

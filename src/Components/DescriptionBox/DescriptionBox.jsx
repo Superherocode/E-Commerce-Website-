@@ -12,22 +12,25 @@ export const DescriptionBox = () => {
       <div className="specifications">
         <h3>Thông số kĩ thuật:</h3>
         <table>
-          <tr>
-            <td>Thương hiệu</td>
-            <td>Điểm 10</td>
-          </tr>
-          <tr>
-            <td>Trọng lượng</td>
-            <td>34 gram</td>
-          </tr>
-          <tr>
-            <td>Quy cách</td>
-            <td>1 cái/ ví</td>
-          </tr>
-          <tr>
-            <td>Màu sắc</td>
-            <td>Xanh</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>Thương hiệu</td>
+              <td>Điểm 10</td>
+            </tr>
+            <tr>
+              <td>Trọng lượng</td>
+              <td>34 gram</td>
+            </tr>
+            <tr>
+              <td>Quy cách</td>
+              <td>1 cái/ ví</td>
+            </tr>
+            <tr>
+              <td>Màu sắc</td>
+              <td>Xanh</td>
+            </tr>
+          </tbody>
+
         </table>
         <div className="product-details">
           <h3>Tính năng nổi bật:</h3>

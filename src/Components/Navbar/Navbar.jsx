@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import './Navbar.css'
 import { Link } from 'react-router-dom';
 
@@ -10,11 +10,13 @@ import vector3 from '../Assets/Vector_3.png'
 import vector4 from '../Assets/Vector_4.png'
 import vector5 from '../Assets/Vector_5.png'
 import vector from '../Assets/Vector.png'
+import { ShopContext } from "../../Context/ShopContext";
 
 
 const Navbar = () => {
 
     const [menu, setMenu] = useState("shop");
+    const {getTotalCartItems} = useContext(ShopContext);
 
   return (
     <div className="navbar">
@@ -49,7 +51,7 @@ const Navbar = () => {
             <li onClick={() =>{setMenu("sanpham")}}>
               <div>
                 <Link to='/sanpham'><span>Sản phẩm </span></Link>
-                <i class="fa-solid fa-chevron-down"></i>
+                <i className="fa-solid fa-chevron-down"></i>
               </div>
               {menu==="sanpham"?<hr/>:<></>}
             </li>
@@ -62,8 +64,8 @@ const Navbar = () => {
             <img src={vector2} alt="" />
             <img src={vector3} alt="" />
             <div className="nav-count1">0</div>
-            <Link to='/cart'><img src={vector4} alt="" /></Link>
-            <div className="nav-count2">0</div>
+            <Link to='/cart'><img src={vector4} alt="" /></Link>{menu==="cart"?<hr/>:<></>}
+            <div className="nav-count2">{getTotalCartItems()}</div>
           </div>
         </div>
 

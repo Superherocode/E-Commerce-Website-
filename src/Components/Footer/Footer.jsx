@@ -3,19 +3,20 @@ import './Footer.css'
 import ueh_logo from '../Assets/ueh_logo.png'
 
 const Footer = () => {
-  
+
   return (
     <div>
       <div className="footer-section">
         <div className="container">
           <div className="footer-top">
             <div className="footer-logo">
-              <img src={ueh_logo} alt="UEH Logo"/>
+              <img src={ueh_logo} alt="UEH Logo" />
             </div>
-            <div className="newsletter">
-              <span>Nhận thông báo</span>
-              <input type="email" placeholder="Email"/>
-                <button type="submit">Gửi <i className="fa fa-arrow-right"></i></button>
+            <span style={{ flex: 1 }}>Nhận thông báo</span>
+            <div className="newsletter-foot">
+
+              <input type="email" placeholder="Email" />
+              <button type="submit">Gửi <i className="fa fa-arrow-right"></i></button>
             </div>
           </div>
           <div className="footer-links">
